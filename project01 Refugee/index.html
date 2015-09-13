@@ -18,7 +18,7 @@
 			height: 60px;
 			z-index: 999;
 		}
-		#nav a ul li{
+		#nav ul a li{
 			font:bold 25px/60px "Microsoft YaHei";
 			padding: 0 25px;
 			color: rgba(0,0,0,0.8);
@@ -74,14 +74,14 @@
 			width: 55%;
 			height:100%;}
 		.group1 div{
-			background:linear-gradient(#1c6094,#658299);
+			background:linear-gradient(#222,#333);
 		}
 		.group2 div{
 			left:0;
-			background:#3d6e94;
+			background:linear-gradient(#333,#444);
 		}
 		.group3 div{
-			background:#1c6094;
+			background:linear-gradient(#444,#555);
 		}
 		section div h2{
 			margin:80px auto 0px;
@@ -89,7 +89,7 @@
 		}
 		section div p{
 			display: block;
-			margin: 20px 60px 0px;
+			margin: 60px 60px 0px;
 			font-size: 20px;
 			text-indent: 2em;
 		}  
@@ -105,24 +105,32 @@
 		}
 		#donation #donIntro{
 			position: absolute;
-			top:25%;
-			left:25%;
-			width:25%;
+			font-size: 30px;
+			font-weight: bold;
+			color:rgb(30,40,20);
+			top:30%;
+			left:50%;
+			width:40%;
+			transform:translateX(-50%);
 		}
 		#donation a{
 			position: absolute;
-			top:40%;
-			right:25%;
+			top:65%;
+			left:50%;
+			transform:translateX(-50%)
 		}
 		#donation button{
+			border-radius: 20px;
 			width: 100px;
-			height: 100px;
+			height: 60px;
+			background: rgba(0,0,0,0.3);
 		}
 		#copyright{
 			position: absolute;
-			bottom:20px;
+			bottom:30px;
 			left:50%;
 			width: 50%;
+			font-size: 18px;
 			transform:translateX(-50%);
 		}
 
@@ -131,13 +139,11 @@
 </head>
 <body>
 	<div id="nav">
-		<a href="#">
-			<ul>
-				<li>首页</li>
-				<li>故事</li>
-				<li>捐赠</li>
-			</ul>
-		</a>
+		<ul>
+			<a href="#"><li>首页</li></a>
+			<a href="#imagesShow"><li>故事</li></a>
+			<a href="#donation"><li>捐赠</li></a>
+		</ul>
 	</div>
 	<div id="banner">
 		<img id="imgBanner" src="images/testBanner2.jpg" width="1349" height="400">
@@ -157,27 +163,26 @@
 		</section>
 		<section class="group2">
 			<div >
-				<h2>STORY01</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<h2>女摄影师故意绊倒难民惹众怒</h2>
+				<p>日前，一批难民越过匈牙利和塞尔维亚边境被匈牙利警方追捕时，匈牙利N1TV的记者在对其进行实地报道。其中一名女摄像师，在一名抱着孩子的难民从身边跑过的时候，故意将其绊倒。</p>
 			</div>
-			<img src="images/test02.jpg" />
+			<img src="images/refugeeI.jpg" />
 		</section>
 		<section class="group3">
-			<img src="images/test03.jpg" />
+			<img src="images/refugeeS.jpg" />
 			<div>
-				<h2>STORY01</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<h2>叙利亚难民出售少女</h2>
+				<p>阿拉伯媒体报道，大批阿拉伯富人涌向叙利亚难民营买女孩。难民营已成富人购物中心，年轻女孩便宜贱卖，100第纳尔(约140美元)就可买个“妻子”。大多数少女被沙特阿拉伯富人买走，用于婚姻或性行为。互联网阿拉伯论坛上，也充斥难民少女买卖信息。</p>
 			</div>
 		</section>
 	</div>
 	<div id="donation">
-		<img src="images/test01.jpg">
-		<div id="donIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus perspiciatis inventore molestiae, debitis magni aliquid nulla, libero ducimus, illum quae ullam? Placeat nisi necessitatibus et illum, iure, minus qui repudiandae!</div>
+		<img src="images/refugeeDon.jpg">
+		<div id="donIntro">UNHCR is on the ground providing life-saving assistance but we need your help.</div>
 		<a href="http://donate.unhcr.org/international/general#_ga=1.121774347.142932559.1441861009">
 			<button type="button">Donation</button>
 		</a>
-<div id="copyright">关于网站 | 服务协议 | 隐私政策 | 开放平台 | 广告服务 | 客服中心 | 网站导航 | 版权所有
-有害短信息举报 | 抵制违法广告承诺书 | 阳光·绿色网络工程 | 版权保护投诉指引 | 网络法制和道德教育基地 | 广东省通管局 | 新闻信息服务许可证 | 互联网出版许可证 </div> 
+<div id="copyright">关于网站 | 服务协议 | 隐私政策 | 客服中心 | 网站导航 | 版权所有</div> 
 	</div>
 	<script type="text/javascript" src="bannerDownUp.js"> </script>	
 </body>
